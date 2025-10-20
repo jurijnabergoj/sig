@@ -1,0 +1,44 @@
+.news-article-container {
+  background-color: var(--primary-color);
+  padding: 3rem 0;
+}
+
+.news-article-wrapper {
+  font-family: 'Montserrat', sans-serif;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  background-color: var(--footer-color);
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.news-article-banner img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.news-article-content {
+  margin-top: 2rem;
+}
+
+.news-article-date {
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 0.5rem;
+}
+
+.news-article-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.news-article-fulltext {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #444;
+  white-space: pre-line;
+}

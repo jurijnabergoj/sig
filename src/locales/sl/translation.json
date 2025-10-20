@@ -1,0 +1,23 @@
+{
+    "novice": {
+        "header": "Novice",
+        "mainTitle": "Novice",
+        "subTitle": "Zadnje novice"
+    },
+    "ustanova": {
+        "header": "O Ustanovi",
+        "mainTitle": "Ustanova Igor Grdina",
+        "subTitle": "Osnovne informacije"
+    },
+    "ustanovitelj": {
+        "header": "O Ustanovitelju",
+        "mainTitle": "Igor Grdina",
+        "subTitle": "Osnovne informacije"
+    },
+    "kontakt": {
+        "header": "Kontakt",
+        "mainTitle": "Kontakt",
+        "subTitle": "Osnovne informacije"
+    } 
+  }
+  

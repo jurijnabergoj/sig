@@ -1,0 +1,23 @@
+{
+    "novice": {
+        "header": "News",
+        "mainTitle": "News",
+        "subTitle": "Latest News"
+    },
+    "ustanova": {
+        "header": "About Institution",
+        "mainTitle": "Igor Grdina Institution",
+        "subTitle": "Information"
+    },
+    "ustanovitelj": {
+        "header": "About Founder",
+        "mainTitle": "Igor Grdina",
+        "subTitle": "Information"
+    },
+    "kontakt": {
+        "header": "Contact",
+        "mainTitle": "Contact",
+        "subTitle": "Information"
+    } 
+  }
+  
