@@ -70,7 +70,7 @@ const Contact = () => {
                       <div>
                         <h3 className="font-display font-semibold text-foreground mb-1">{t("contact.info.address")}</h3>
                         <p className="text-muted-foreground text-sm">
-                          Čopova ulica 123<br />
+                          Čopova ulica 1<br />
                           Ljubljana, Slovenija
                         </p>
                       </div>
@@ -144,15 +144,18 @@ const Contact = () => {
               </Card>
             </div>
           </div>
-
-          {/* Map Placeholder */}
-          <div className="mt-12">
+          {/*
+          <div className="mt-12 w-50 h-50">
             <Card className="shadow-soft overflow-hidden">
-              <div className="aspect-video bg-muted flex items-center justify-center">
-                <p className="text-muted-foreground">Map Placeholder</p>
-              </div>
+              <iframe
+                title={t("contact.map.title")}
+                src="https://www.openstreetmap.org/export/embed.html?bbox=14.496%2C46.046%2C14.517%2C46.057&layer=mapnik&marker=46.0518%2C14.5065"
+                className="w-full aspect-video border-0"
+                loading="lazy"
+              />
             </Card>
           </div>
+           */}
         </div>
       </div>
     </div>

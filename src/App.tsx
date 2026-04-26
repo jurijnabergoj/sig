@@ -22,7 +22,7 @@ const App = () => (
       <LanguageProvider>
         <Toaster />
         <Sonner />
-        <BrowserRouter>
+        <BrowserRouter basename="/sig">
           <ScrollToTop />
           <div className="min-h-screen flex flex-col">
             <Navigation />

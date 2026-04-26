@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      // Encode the full path as a query param and redirect to the root.
+      // The index.html script will restore it before React Router mounts.
+      var l = window.location;
+      l.replace(
+        l.protocol + "//" + l.hostname + (l.port ? ":" + l.port : "") +
+        l.pathname.split("/").slice(0, 2).join("/") +
+        "/?p=" + encodeURIComponent(l.pathname.slice(1) + l.search) +
+        (l.hash || "")
+      );
+    </script>
+  </head>
+  <body></body>
+</html>
