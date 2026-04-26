@@ -23,7 +23,7 @@ const Navigation = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3">
             <div className="w-24 flex items-center justify-center">
-              <img src="/images/ig_logo.png"></img>
+              <img src="/images/ig_logo.png" alt="Ustanova Igor Grdina" />
             </div>
           </Link>
 
@@ -33,7 +33,7 @@ const Navigation = () => {
               <Link
                 key={item.path}
                 to={item.path}
-                className={`font-medium transition-smooth ${
+                className={`font-display font-medium transition-smooth ${
                   location.pathname === item.path
                     ? "text-secondary"
                     : "text-foreground hover:text-secondary"
@@ -49,7 +49,7 @@ const Navigation = () => {
             <Button
               variant="ghost"
               size="sm"
-              onClick={() => setLanguage(language === "en" ? "si" : "en")}
+              onClick={() => setLanguage(language === "en" ? "sl" : "en")}
               className="gap-2"
             >
               <Globe className="w-4 h-4" />
@@ -79,7 +79,7 @@ const Navigation = () => {
                     location.pathname === item.path
                       ? "bg-muted text-secondary"
                       : "text-foreground hover:bg-muted"
-                  }`}
+                  } font-display`}
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {item.label}

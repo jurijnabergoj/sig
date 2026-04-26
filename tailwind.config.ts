@@ -28,8 +28,8 @@ export default {
           foreground: "hsl(var(--secondary-foreground))",
         },
         terciary: {
-          DEFAULT: "var(--terciary)",
-          foreground: "var(--terciary-foreground)",
+          DEFAULT: "hsl(var(--terciary))",
+          foreground: "hsl(var(--terciary-foreground))",
         },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",

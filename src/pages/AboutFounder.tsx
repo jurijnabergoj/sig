@@ -16,7 +16,7 @@ const AboutFounder = () => {
           <div className="grid md:grid-cols-2 gap-12 items-start mb-12">
             <div>
               <img
-                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=600&q=80"
+                src="images/IG3.jpg"
                 alt="Igor Grdina"
                 className="w-full rounded-lg shadow-large"
               />
@@ -74,15 +74,15 @@ const AboutFounder = () => {
 
             <div className="my-12 grid md:grid-cols-3 gap-6">
               <div className="text-center p-6 bg-card rounded-lg shadow-soft border border-border">
-                <div className="text-4xl font-display font-bold text-secondary mb-2">70+</div>
+                <div className="text-4xl font-display font-bold text-secondary mb-2">30+</div>
                 <div className="text-sm text-muted-foreground">{t("founder.stats.years")}</div>
               </div>
               <div className="text-center p-6 bg-card rounded-lg shadow-soft border border-border">
-                <div className="text-4xl font-display font-bold text-secondary mb-2">15</div>
+                <div className="text-4xl font-display font-bold text-secondary mb-2">20+</div>
                 <div className="text-sm text-muted-foreground">{t("founder.stats.works")}</div>
               </div>
               <div className="text-center p-6 bg-card rounded-lg shadow-soft border border-border">
-                <div className="text-4xl font-display font-bold text-secondary mb-2">1000+</div>
+                <div className="text-4xl font-display font-bold text-secondary mb-2">50+</div>
                 <div className="text-sm text-muted-foreground">{t("founder.stats.mentored")}</div>
               </div>
             </div>

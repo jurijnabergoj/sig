@@ -1,6 +1,6 @@
 import { createContext, useContext, useState, ReactNode } from "react";
 
-type Language = "en" | "si";
+type Language = "en" | "sl";
 
 interface LanguageContextType {
   language: Language;
@@ -17,50 +17,59 @@ const translations: Record<Language, Record<string, string>> = {
     "nav.aboutInstitution": "About Institution",
     "nav.aboutFounder": "About Founder",
     "nav.contact": "Contact",
-    
+
     // News Page
     "news.title": "Latest News",
     "news.subtitle": "Stay updated with our latest announcements and events",
     "news.intro": "Welcome to our institution's news portal. Here you'll find the latest updates, announcements, and insights from our community.",
     "news.readMore": "Read more",
-    
+
     // About Institution
-    "institution.title": "About Our Institution",
-    "institution.subtitle": "Excellence in education since 1950",
-    "institution.intro": "Our institution stands as a beacon of educational excellence, committed to nurturing minds and shaping futures. Founded on the principles of academic rigor, innovation, and social responsibility, we have been serving our community for over seven decades.",
-    "institution.history.title": "Our History",
-    "institution.history.content": "Established in 1950, our institution emerged from a vision to create an educational environment that would challenge, inspire, and empower students from all backgrounds. Through the decades, we have evolved while staying true to our founding principles of excellence, integrity, and service.",
+    "institution.title": "About the Institution",
+    "institution.subtitle": "Promoting Slovenian history and cultural heritage",
+    "institution.heritage.title": "Our Origins",
+    "institution.heritage.content1": "Ustanova Igor Grdina was established with a clear purpose: to advance research into Slovenian history and culture, and to bring that research into meaningful dialogue with the public. It is named after the prominent Slovenian historian Igor Grdina, whose decades of scholarly work on Slovenian cultural history inspired its founding.",
+    "institution.heritage.content2": "The institution operates at the intersection of academic rigour and civic engagement. We believe that understanding history is not a privilege of specialists — it is a foundation for informed citizenship and cultural self-awareness. Our work is therefore both scholarly and publicly oriented.",
     "institution.mission.title": "Our Mission",
-    "institution.mission.content": "We are dedicated to providing a transformative educational experience that prepares students not just for careers, but for meaningful lives. Our mission is to cultivate critical thinking, foster creativity, and instill a sense of social responsibility in every student who walks through our doors.",
+    "institution.mission.content": "We organise public lectures, scholarly symposia, and educational programmes on Slovenian history and cultural heritage. Our activities bring together researchers, educators, students, and curious citizens around topics that matter: the formation of Slovenian national identity, the great figures of Slovenian literature and thought, and the broader Central European context of Slovenian history.",
+    "institution.mission.content2": "We also support the publication of scholarly and popular-scientific works on Slovenian history. From academic monographs to accessible introductions, we aim to make serious historical knowledge available to anyone with the desire to learn.",
+    "institution.pillars.excellence.title": "Public Lectures",
+    "institution.pillars.excellence.desc": "Regular lectures by leading historians, literary scholars, and cultural critics — open and free to the public.",
+    "institution.pillars.innovation.title": "Scholarly Symposia",
+    "institution.pillars.innovation.desc": "Annual and thematic symposia that bring together researchers from Slovenia and abroad to explore key questions in Slovenian cultural history.",
+    "institution.pillars.global.title": "Educational Programmes",
+    "institution.pillars.global.desc": "Programmes for secondary school students, university undergraduates, and adult learners who wish to deepen their knowledge of Slovenian history.",
+    "institution.pillars.community.title": "Publications",
+    "institution.pillars.community.desc": "Support for the publication of books, edited volumes, and articles that advance the understanding of Slovenian history and culture.",
     "institution.values.title": "Our Values",
     "institution.values.excellence": "Excellence",
-    "institution.values.excellence.desc": "Pursuing the highest standards in all endeavors",
+    "institution.values.excellence.desc": "We pursue the highest standards in all aspects of education and institutional operations.",
     "institution.values.integrity": "Integrity",
-    "institution.values.integrity.desc": "Acting with honesty and strong moral principles",
+    "institution.values.integrity.desc": "We uphold ethical principles and foster a culture of honesty, transparency, and accountability.",
+    "institution.values.inclusivity": "Inclusivity",
+    "institution.values.inclusivity.desc": "We celebrate diversity and create an environment where all individuals feel valued and supported.",
     "institution.values.innovation": "Innovation",
-    "institution.values.innovation.desc": "Embracing new ideas and creative solutions",
-    "institution.values.community": "Community",
-    "institution.values.community.desc": "Building connections and supporting one another",
-    
+    "institution.values.innovation.desc": "We embrace change and continuously seek new ways to enhance the educational experience.",
+
     // About Founder
-    "founder.title": "About Founder",
-    "founder.subtitle": "The visionary behind our institution",
-    "founder.name": "Igor Grdina (1920-1995)",
-    "founder.intro1": "Igor Grdina was a visionary educator, philosopher, and humanitarian whose life's work was dedicated to the belief that education is the most powerful tool for social transformation and individual empowerment. Born in 1920 in a small village, he overcame significant personal hardships to become one of the most influential educational reformers of his generation.",
-    "founder.intro2": "After completing his studies in pedagogy and philosophy, Grdina devoted himself to creating educational opportunities for students from all backgrounds. His progressive ideas about education emphasized not just academic learning, but the development of character, critical thinking, and social responsibility.",
-    "founder.philosophy.title": "His Philosophy",
-    "founder.philosophy.content": "Igor Grdina believed that true education must address the whole person—mind, body, and spirit. He championed a holistic approach that combined rigorous academic standards with attention to ethical development and social consciousness. His educational philosophy was grounded in several core principles:",
-    "founder.quote": "Education is not preparation for life; education is life itself. It is the means by which we discover our potential, understand our responsibilities, and find our place in the world.",
-    "founder.quote.year": "— Igor Grdina, 1965",
-    "founder.philosophy.access": "Grdina was particularly passionate about ensuring that educational opportunities were accessible to all, regardless of economic or social background. He established numerous scholarship programs and advocated tirelessly for educational reform that would create pathways for talented students from disadvantaged communities.",
-    "founder.legacy.title": "Legacy and Impact",
-    "founder.legacy.content1": "The institution that bears Igor Grdina's name was established in 1950 as the culmination of his vision for educational excellence. Today, it stands as a testament to his belief in the transformative power of education. The institution has educated thousands of students who have gone on to make significant contributions in their fields and communities.",
-    "founder.legacy.content2": "Grdina's influence extended beyond the walls of his institution. He authored numerous influential works on educational theory and practice, mentored countless educators, and served as an advisor to educational policymakers. His ideas continue to shape progressive educational practices worldwide.",
-    "founder.legacy.content3": "Even after his passing in 1995, Igor Grdina's legacy lives on through the institution he founded and the countless lives he touched. His vision of education as a force for social good and individual empowerment remains as relevant today as it was during his lifetime.",
-    "founder.stats.years": "Years of Impact",
-    "founder.stats.works": "Published Works",
-    "founder.stats.mentored": "Educators Mentored",
-    
+    "founder.title": "About the Founder",
+    "founder.subtitle": "Slovenian historian and cultural critic",
+    "founder.name": "Igor Grdina",
+    "founder.intro1": "Igor Grdina is one of Slovenia's most prominent historians and cultural critics. As a Senior Research Fellow at the Institute of Cultural History at ZRC SAZU (Scientific Research Centre of the Slovenian Academy of Sciences and Arts), his work has profoundly shaped how Slovenes understand their cultural and literary past.",
+    "founder.intro2": "His research focuses on Slovenian cultural and literary history, particularly the long 19th century — the era of national awakening, Romanticism, and the formation of a distinctly Slovenian identity. He has written extensively about France Prešeren, Ivan Cankar, Anton Aškerc, and other central figures in the Slovenian literary canon.",
+    "founder.philosophy.title": "Research Focus",
+    "founder.philosophy.content": "Grdina approaches the history of Slovenian culture as an integral part of the broader Central European tradition. His work examines how Slovenian writers, thinkers, and artists navigated the Habsburg political world while cultivating a rich and independent cultural identity. He pays particular attention to the interplay between language, literature, and national consciousness:",
+    "founder.quote": "History is not a collection of dates and events — it is the story of how people made sense of their world, and how that understanding continues to shape us.",
+    "founder.quote.year": "— Igor Grdina",
+    "founder.philosophy.access": "Beyond academic research, Grdina has long been committed to making Slovenian history accessible to a wider public. Through public lectures, essays, and popular-scientific writing, he bridges the gap between rigorous scholarship and engaged civic education — a commitment that lies at the heart of the institution that bears his name.",
+    "founder.legacy.title": "Selected Work",
+    "founder.legacy.content1": "Grdina is the author of numerous monographs and scholarly articles on Slovenian cultural history. His books explore topics ranging from the poetry of France Prešeren and the prose of Ivan Cankar to the cultural geography of the Slovenian lands within the Habsburg Monarchy.",
+    "founder.legacy.content2": "He has also written about the intellectual history of the Slovenian national movement, the role of the Catholic Church in Slovenian culture, and the relationship between Slovenian and broader European literary currents. His essays and reviews appear regularly in leading Slovenian scholarly journals and cultural publications.",
+    "founder.legacy.content3": "As a professor at the Faculty of Arts of the University of Ljubljana, Grdina has mentored generations of historians and literary scholars. The institution that bears his name was founded to extend this mission — bringing serious historical inquiry into dialogue with the broader public.",
+    "founder.stats.years": "Years of Research",
+    "founder.stats.works": "Published Monographs",
+    "founder.stats.mentored": "Scholarly Contributions",
+
     // Contact
     "contact.title": "Contact Us",
     "contact.subtitle": "Get in touch with our institution",
@@ -69,7 +78,7 @@ const translations: Record<Language, Record<string, string>> = {
     "contact.info.phone": "Phone",
     "contact.info.address": "Address",
     "contact.info.hours": "Office Hours",
-    "contact.info.hours.value": "Monday - Friday: 8:00 AM - 4:00 PM",
+    "contact.info.hours.value": "Monday – Friday: 8:00 AM – 4:00 PM",
     "contact.form.title": "Send us a Message",
     "contact.form.name": "Name",
     "contact.form.name.placeholder": "Your name",
@@ -80,57 +89,83 @@ const translations: Record<Language, Record<string, string>> = {
     "contact.form.submit": "Send Message",
     "contact.form.success": "Thank you for your message! We'll get back to you soon.",
     "contact.map.title": "Our Location",
+
+    // Footer
+    "footer.description": "Empowering students since 1950. Dedicated to fostering academic excellence and personal growth.",
+    "footer.quickLinks": "Quick Links",
+    "footer.contact": "Contact",
+    "footer.copyright": "All rights reserved.",
+
+    // News Article
+    "article.backToNews": "Back to News",
+    "article.previousArticle": "Previous Article",
+    "article.nextArticle": "Next Article",
+    "article.notFound.title": "Article Not Found",
+    "article.notFound.back": "Return to News",
+
+    // Not Found
+    "notFound.message": "Oops! Page not found",
+    "notFound.back": "Return to Home",
   },
-  si: {
+  sl: {
     // Navigation
     "nav.news": "Novice",
     "nav.aboutInstitution": "Ustanova",
     "nav.aboutFounder": "Ustanovitelj",
     "nav.contact": "Kontakt",
-    
+
     // News Page
     "news.title": "Novice",
     "news.subtitle": "Spremljajte naše najnovejše objave in dogodke",
-    "news.intro": "Dobrodošli na novičnem portalu ustanove Igor Grdina. Tu boste našli najnovejše novice, obvestila in informacije o znanstveno raziskovalnem delu ustanove.",
+    "news.intro": "Dobrodošli na novičnem portalu Ustanove Igor Grdina. Tu boste našli najnovejše novice, obvestila in informacije o znanstvenoraziskovalnem delu ustanove.",
     "news.readMore": "Preberi več",
-    
+
     // About Institution
-    "institution.title": "O Naši Ustanovi",
-    "institution.subtitle": "Odličnost v izobraževanju od leta 1950",
-    "institution.intro": "Naša ustanova je svetilnik izobraževalne odličnosti, zavezana negovanju znanja in oblikovanju prihodnosti. Ustanovljeni na načelih akademske strogosti, inovativnosti in družbene odgovornosti, že več kot sedem desetletij služimo naši skupnosti.",
-    "institution.history.title": "Naša Zgodovina",
-    "institution.history.content": "Ustanovljeni leta 1950, se je naša ustanova pojavila iz vizije ustvariti izobraževalno okolje, ki bi izzivalo, navdihovalo in opolnomočilo študente vseh okolij. Skozi desetletja smo se razvijali, a ostali zvesti našim temeljnim načelom odličnosti, integritete in služenja.",
+    "institution.title": "O Ustanovi",
+    "institution.subtitle": "Spodbujanje slovenske zgodovine in kulturne dediščine",
+    "institution.heritage.title": "Nastanek in Namen",
+    "institution.heritage.content1": "Ustanova Igor Grdina je bila ustanovljena z jasnim namenom: poglabljati raziskovanje slovenske zgodovine in kulture ter to znanje prenašati v smiselni dialog z javnostjo. Poimenovana je po uglednem slovenskem zgodovinarju Igorju Grdini, katerega desetletja znanstvenoraziskovalnega dela o slovenski kulturni zgodovini so navdihovala njen nastanek.",
+    "institution.heritage.content2": "Ustanova deluje na stičišču akademske strogosti in civilne odgovornosti. Prepričani smo, da razumevanje zgodovine ni privilegij strokovnjakov — je temelj ozaveščenega državljanstva in kulturne samozavesti. Naše dejavnosti so zato hkrati znanstvene in javno usmerjene.",
     "institution.mission.title": "Naše Poslanstvo",
-    "institution.mission.content": "Zavezani smo zagotavljanju preobrazne izobraževalne izkušnje, ki študente pripravlja ne le za kariere, ampak za smiselna življenja. Naše poslanstvo je gojiti kritično razmišljanje, spodbujati ustvarjalnost in vsakemu študentu vcepiti občutek družbene odgovornosti.",
+    "institution.mission.content": "Organiziramo javna predavanja, znanstvene simpozije in izobraževalne programe s področja slovenske zgodovine in kulturne dediščine. Naše dejavnosti združujejo raziskovalce, pedagoge, študente in radovedne posameznike okoli tem, ki so pomembne: oblikovanje slovenskega narodnega identiteta, veliki liki slovenskega slovstva in misli ter širši srednjeevropski kontekst slovenske zgodovine.",
+    "institution.mission.content2": "Podpiramo tudi izdajanje znanstvenih in poljudnoznanstvenih del s področja slovenske zgodovine — od akademskih monografij do dostopnih uvodov za širšo javnost. Naš cilj je, da resno zgodovinsko znanje postane dostopno vsakomur, ki si ga želi pridobiti.",
+    "institution.pillars.excellence.title": "Javna Predavanja",
+    "institution.pillars.excellence.desc": "Redna predavanja vodilnih zgodovinarjev, literarnih zgodovinarjev in kulturnih kritikov — odprta in brezplačna za vse.",
+    "institution.pillars.innovation.title": "Znanstveni Simpoziji",
+    "institution.pillars.innovation.desc": "Letni in tematski simpoziji, ki zbirajo raziskovalce iz Slovenije in tujine za razpravo o ključnih vprašanjih slovenske kulturne zgodovine.",
+    "institution.pillars.global.title": "Izobraževalni Programi",
+    "institution.pillars.global.desc": "Programi za dijake, študente in odrasle, ki si želijo poglobiti znanje o slovenski zgodovini in kulturi.",
+    "institution.pillars.community.title": "Publikacije",
+    "institution.pillars.community.desc": "Podpora izdajanju knjig, zbornikov in člankov, ki poglabljajo razumevanje slovenske zgodovine in kulture.",
     "institution.values.title": "Naše Vrednote",
     "institution.values.excellence": "Odličnost",
-    "institution.values.excellence.desc": "Stremljenje k najvišjim standardom pri vseh prizadevanjih",
+    "institution.values.excellence.desc": "Stremimo k najvišjim standardom na vseh področjih izobraževanja in delovanja ustanove.",
     "institution.values.integrity": "Integriteta",
-    "institution.values.integrity.desc": "Ravnanje s poštenostjo in močnimi moralnimi načeli",
+    "institution.values.integrity.desc": "Zagovarjamo etična načela in gradimo kulturo poštenosti, preglednosti in odgovornosti.",
+    "institution.values.inclusivity": "Vključenost",
+    "institution.values.inclusivity.desc": "Slavimo raznolikost in ustvarjamo okolje, v katerem se vsi posamezniki počutijo cenjene in podprte.",
     "institution.values.innovation": "Inovativnost",
-    "institution.values.innovation.desc": "Sprejemanje novih idej in kreativnih rešitev",
-    "institution.values.community": "Skupnost",
-    "institution.values.community.desc": "Gradnja povezav in medsebojna podpora",
-    
+    "institution.values.innovation.desc": "Sprejemamo spremembe in nenehno iščemo nove načine za izboljšanje izobraževalne izkušnje.",
+
     // About Founder
     "founder.title": "O Ustanovitelju",
-    "founder.subtitle": "Vizionar za našo ustanovo",
-    "founder.name": "Igor Grdina (1920-1995)",
-    "founder.intro1": "Igor Grdina je bil vizionarski pedagog, filozof in humanist, katerega življenjsko delo je bilo posvečeno prepričanju, da je izobraževanje najmočnejše orodje za družbeno preobrazbo in osebno opolnomočenje. Rojen leta 1920 v majhni vasi je premagal pomembne osebne težave in postal eden najvplivnejših izobraževalnih reformatorjev svoje generacije.",
-    "founder.intro2": "Po zaključku študija pedagogike in filozofije se je Grdina posvetil ustvarjanju izobraževalnih priložnosti za študente vseh okolij. Njegove napredne ideje o izobraževanju so poudarjale ne le akademsko učenje, ampak tudi razvoj značaja, kritičnega razmišljanja in družbene odgovornosti.",
-    "founder.philosophy.title": "Njegova Filozofija",
-    "founder.philosophy.content": "Igor Grdina je verjel, da se mora pravo izobraževanje ukvarjati s celotno osebo – umom, telesom in duhom. Zagovarjal je celosten pristop, ki je združeval stroge akademske standarde s pozornostjo na etični razvoj in družbeno zavest. Njegova izobraževalna filozofija je temeljila na več osnovnih načelih:",
-    "founder.quote": "Izobraževanje ni priprava na življenje; izobraževanje je samo življenje. To je način, s katerim odkrivamo svoj potencial, razumemo svoje odgovornosti in najdemo svoje mesto v svetu.",
-    "founder.quote.year": "— Igor Grdina, 1965",
-    "founder.philosophy.access": "Grdina je bil posebej strastno predan zagotavljanju, da so izobraževalne priložnosti dostopne vsem, ne glede na ekonomsko ali socialno ozadje. Ustanovil je številne štipendijske programe in neutrudno zagovarjal izobraževalno reformo, ki bi ustvarila poti za nadarjene študente iz prikrajšanih skupnosti.",
-    "founder.legacy.title": "Zapuščina in Vpliv",
-    "founder.legacy.content1": "Ustanova, ki nosi ime Igorja Grdine, je bila ustanovljena leta 1950 kot vrhunec njegove vizije izobraževalne odličnosti. Danes stoji kot dokaz njegovega prepričanja v preoblikovalno moč izobraževanja. Ustanova je izobrazila tisoče študentov, ki so nadaljevali s pomembnimi prispevki na svojih področjih in v svojih skupnostih.",
-    "founder.legacy.content2": "Grdinin vpliv je segal onkraj zidov njegove ustanove. Napisal je številna vplivna dela o izobraževalni teoriji in praksi, mentoriral neštetim pedagogom in služil kot svetovalec oblikovalcem izobraževalne politike. Njegove ideje še naprej oblikujejo napredne izobraževalne prakse po vsem svetu.",
-    "founder.legacy.content3": "Tudi po njegovi smrti leta 1995 Grdinova zapuščina živi naprej skozi ustanovo, ki jo je ustanovil, in neštetih življenj, ki se jih je dotaknil. Njegova vizija izobraževanja kot sile za družbeno dobrino in osebno opolnomočenje ostaja enako pomembna danes, kot je bila v času njegovega življenja.",
-    "founder.stats.years": "Let Vpliva",
-    "founder.stats.works": "Objavljenih Del",
-    "founder.stats.mentored": "Mentoriranih Pedagogov",
-    
+    "founder.subtitle": "Slovenski zgodovinar in kulturni kritik",
+    "founder.name": "Igor Grdina",
+    "founder.intro1": "Igor Grdina je eden najpomembnejših slovenskih zgodovinarjev in kulturnih kritikov. Kot višji znanstveni sodelavec na Inštitutu za kulturno zgodovino pri ZRC SAZU (Znanstvenoraziskovalnem centru Slovenske akademije znanosti in umetnosti) je njegovo delo bistveno oblikovalo razumevanje slovenskega kulturnega in literarnega izročila.",
+    "founder.intro2": "Njegovo raziskovalno področje je slovenska kulturna in literarna zgodovina, zlasti dolgo 19. stoletje — čas narodnega prebujenja, romantike in oblikovanja slovenskega narodnega identiteta. Obsežno je pisal o Francetu Prešernu, Ivanu Cankarju, Antonu Aškercu in drugih osrednjih osebnostih slovenskega literarnega kanona.",
+    "founder.philosophy.title": "Področje Dela",
+    "founder.philosophy.content": "Grdina obravnava zgodovino slovenske kulture kot sestavni del širše srednjeevropske tradicije. Njegovo delo preučuje, kako so slovenski pisatelji, misleci in umetniki krmarili v habsburškem političnem svetu, hkrati pa negovali bogato in samostojno kulturno identiteto. Posebno pozornost namenja prepletanju med jezikom, literaturo in narodnim zavedanjem:",
+    "founder.quote": "Zgodovina ni zbirka datumov in dogodkov — je pripoved o tem, kako so ljudje razumevali svoj svet, in o tem, kako to razumevanje še danes oblikuje nas.",
+    "founder.quote.year": "— Igor Grdina",
+    "founder.philosophy.access": "Grdina se že dolgo zavzema za to, da bi bila slovenska zgodovina dostopna širši javnosti. Z javnimi predavanji, eseji in poljudnoznanstvenim pisanjem premoščuje prepad med strogim akademskim raziskovanjem in angažiranim javnim izobraževanjem — zavezanost, ki je v srcu ustanove, ki nosi njegovo ime.",
+    "founder.legacy.title": "Izbor iz Dela",
+    "founder.legacy.content1": "Grdina je avtor številnih monografij in znanstvenih člankov o slovenski kulturni zgodovini. Njegove knjige obravnavajo teme od poezije Franceta Prešerna in proze Ivana Cankarja do kulturne geografije slovenskega prostora v okviru Habsburške monarhije.",
+    "founder.legacy.content2": "Pisal je tudi o intelektualni zgodovini slovenskega narodnega gibanja, vlogi Katoliške cerkve v slovenski kulturi ter o razmerjih med slovenskimi in širšimi evropskimi literarnimi tokovi. Njegovi eseji in recenzije redno izhajajo v vodilnih slovenskih znanstvenih revijah in kulturnih publikacijah.",
+    "founder.legacy.content3": "Kot profesor na Filozofski fakulteti Univerze v Ljubljani je Grdina mentoriral generacije zgodovinarjev in literarnih znanstvenikov. Ustanova, ki nosi njegovo ime, je bila ustanovljena, da to poslanstvo razširi — in resno zgodovinsko raziskovanje postavi v dialog s širšo javnostjo.",
+    "founder.stats.years": "Let Raziskovalnega Dela",
+    "founder.stats.works": "Objavljenih Monografij",
+    "founder.stats.mentored": "Znanstvenih Prispevkov",
+
     // Contact
     "contact.title": "Kontaktirajte Nas",
     "contact.subtitle": "Stopite v stik z našo ustanovo",
@@ -139,8 +174,8 @@ const translations: Record<Language, Record<string, string>> = {
     "contact.info.phone": "Telefon",
     "contact.info.address": "Naslov",
     "contact.info.hours": "Delovni Čas",
-    "contact.info.hours.value": "Ponedeljek - Petek: 8:00 - 16:00",
-    "contact.form.title": "Pošljite nam Sporočilo",
+    "contact.info.hours.value": "Ponedeljek – Petek: 8:00 – 16:00",
+    "contact.form.title": "Pošljite nam sporočilo",
     "contact.form.name": "Ime",
     "contact.form.name.placeholder": "Vaše ime",
     "contact.form.email": "E-pošta",
@@ -150,11 +185,28 @@ const translations: Record<Language, Record<string, string>> = {
     "contact.form.submit": "Pošlji Sporočilo",
     "contact.form.success": "Hvala za vaše sporočilo! Kmalu se vam bomo oglasili.",
     "contact.map.title": "Naša Lokacija",
+
+    // Footer
+    "footer.description": "Opolnomočevanje študentov od leta 1950. Zavezani k spodbujanju akademske odličnosti in osebne rasti.",
+    "footer.quickLinks": "Hitre Povezave",
+    "footer.contact": "Kontakt",
+    "footer.copyright": "Vse pravice pridržane.",
+
+    // News Article
+    "article.backToNews": "Nazaj na Novice",
+    "article.previousArticle": "Prejšnji članek",
+    "article.nextArticle": "Naslednji članek",
+    "article.notFound.title": "Članek ni bil najden",
+    "article.notFound.back": "Nazaj na Novice",
+
+    // Not Found
+    "notFound.message": "Ups! Stran ni bila najdena",
+    "notFound.back": "Nazaj na Začetek",
   },
 };
 
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {
-  const [language, setLanguage] = useState<Language>("en");
+  const [language, setLanguage] = useState<Language>("sl");
 
   const t = (key: string): string => {
     return translations[language][key] || key;

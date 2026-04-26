@@ -70,8 +70,8 @@ const Contact = () => {
                       <div>
                         <h3 className="font-display font-semibold text-foreground mb-1">{t("contact.info.address")}</h3>
                         <p className="text-muted-foreground text-sm">
-                          123 School Street<br />
-                          City, Country
+                          Čopova ulica 123<br />
+                          Ljubljana, Slovenija
                         </p>
                       </div>
                     </div>
