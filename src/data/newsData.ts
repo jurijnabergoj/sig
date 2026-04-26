@@ -15,6 +15,8 @@ export interface StaticArticle {
   coverImage: string;
 }
 
+const base = import.meta.env.BASE_URL;
+
 export const newsArticles: StaticArticle[] = [
   {
     id: "1",
@@ -48,7 +50,7 @@ export const newsArticles: StaticArticle[] = [
       `,
       date: "15 April 2025",
     },
-    coverImage: "/images/PT.webp",
+    coverImage: `${base}images/PT.webp`,
   },
   {
     id: "2",
@@ -82,7 +84,7 @@ export const newsArticles: StaticArticle[] = [
       `,
       date: "12 February 2025",
     },
-    coverImage: "/images/JVV.webp",
+    coverImage: `${base}images/JVV.webp`,
   },
   {
     id: "3",
@@ -116,6 +118,6 @@ export const newsArticles: StaticArticle[] = [
       `,
       date: "3 January 2025",
     },
-    coverImage: "/images/NP.jpg",
+    coverImage: `${base}images/NP.jpg`,
   },
 ];

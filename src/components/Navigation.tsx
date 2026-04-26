@@ -23,7 +23,7 @@ const Navigation = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3">
             <div className="w-24 flex items-center justify-center">
-              <img src="/images/ig_logo.png" alt="Ustanova Igor Grdina" />
+              <img src={`${import.meta.env.BASE_URL}images/ig_logo.png`} alt="Ustanova Igor Grdina" />
             </div>
           </Link>
 
